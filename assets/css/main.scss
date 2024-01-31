@@ -1,0 +1,92 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+$green-base: #378b60;
+$pink-base: #ff00b8;
+$orange-base: #fb9600;
+$white-smoke: #f5f5f5;
+$dark-grey: #4d4d4d;
+
+.bc-green-button {
+  background-color: $green-base;
+}
+
+.bc-pink-button {
+  background-color: $pink-base;
+}
+
+.bc-orange-button {
+  background-color: $orange-base;
+}
+
+.c-green-text {
+  color: $green-base;
+}
+
+.c-pink-text {
+  color: $pink-base;
+}
+
+.c-orange-text {
+  color: $orange-base;
+}
+
+.f-green-icon {
+  filter: invert(42%) sepia(60%) saturate(441%) hue-rotate(97deg)
+    brightness(96%) contrast(79%);
+}
+
+.f-pink-icon {
+  filter: invert(31%) sepia(75%) saturate(5027%) hue-rotate(299deg)
+    brightness(90%) contrast(136%);
+}
+
+.f-orange-icon {
+  filter: invert(54%) sepia(97%) saturate(1261%) hue-rotate(3deg)
+    brightness(101%) contrast(101%);
+}
+
+.f-grey-icon {
+  filter: invert(27%) sepia(0%) saturate(258%) hue-rotate(164deg)
+    brightness(102%) contrast(88%);
+}
+
+.f-white-icon {
+  filter: invert(100%) sepia(5%) saturate(1%) hue-rotate(12deg) brightness(106%)
+    contrast(100%);
+}
+
+@mixin lineClamp($lineQuantity) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $lineQuantity;
+  line-clamp: $lineQuantity;
+  -webkit-box-orient: vertical;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
